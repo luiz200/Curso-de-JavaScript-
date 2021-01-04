@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        /*Comentário em CSS*/
+        body{
+            background-color: rgb(46, 46, 145);
+            color: cornsilk;
+            font: normal 22pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apredendo a usar <strong>Dom</strong> em JavaScript</p>
+    <div id="msg">Clique em mais</div>
+    <script>
+        var corpo = window.document.body
+        var b = window.document.getElementById('msg')
+        var b = window.document.querySelector('div#msg')/*# = id --- . = class*/
+        var p1 = window.document.getElementsByTagName('p')[1]//[0] é o primeiro paragráfo
+        window.document.write(p1.innerHTML)/*innerHTML vai pegar todos os elementos do HTML e o innerText, não.*/
+        window.document.write(b.innerHTML)
+        corpo.style.background = 'black'
+        p1.style.color = 'red'
+    </script>
+</body>
+</html>
