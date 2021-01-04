@@ -1,0 +1,8 @@
+comandos básicos de javaScript
+
+alert("Olá, Mundo!")
+
+document.body.style.background = "red"
+
+document.querySelector('span.bstn-hl-title').innerText = 'Estudos apontam que eu comi o cú de quem tá lendo'
+
