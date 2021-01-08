@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        /*Comentário em CSS*/
+        body{
+            background-color: rgb(46, 46, 145);
+            color: cornsilk;
+            font: normal 22pt Arial;
+        }
+        div#area {
+            font: normal 20pt arial;
+            background: rgb(4, 16, 54);
+            color: ghostwhite;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="text" id="txtvel"> Km/h 
+    <br>
+    <button onclick="verif()" >Verificar</button>
+    <div id="res"></div>
+    <script>
+        function verif(){
+            var txtv = window.document.getElementById('txtvel');
+            var re = window.document.getElementById('res');
+            var vel = Number(txtv.value);
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`;
+            if(vel > 60){
+                res.innerHTML += '<p><strong>Você está MULTADO</strong> por ecesso de velocidade!</p>' 
+            }
+            res.innerHTML += '<p>Dirija sempre com cinto de segurança!</p>'
+        }
+    </script>
+</body>
+</html>
